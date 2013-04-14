@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @idea.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @idea.score %>
+</p>
+
+<%= link_to "UP", up_idea_path(@idea) %>
+
+<%= link_to "DOWN", down_idea_path(@idea) %>
+
+<br>
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>

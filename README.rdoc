@@ -1,0 +1,3 @@
+Grupo "PHP"
+
+Agregamos votación (thumbs up/thumbs down) a la app de ideas.
